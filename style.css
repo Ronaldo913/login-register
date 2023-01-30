@@ -29,11 +29,10 @@ body {
   justify-content: center;
   align-items: center;
   background: #7de3b3;
-  padding: 1rem;
 }
 
 .image img {
-  width: 31rem;
+  width: 100%;
 }
 
 .form {
@@ -58,7 +57,6 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 2.5rem;
-  margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -275,6 +273,9 @@ body {
   }
   .form form {
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
   }
   .form-header {
     margin: 0;
