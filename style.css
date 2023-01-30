@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #79d2a9;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7de3b3;
+  padding: 1rem;
+}
+
+.image img {
+  width: 31rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+}
+
+.form form {
+  width: 100%;
+  height: 100vh;
+}
+
+.form-header {
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: #7de3b3;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #76c6a1;
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #76c6a1;
+  position: absolute;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .8rem;
+}
+
+.input-box input {
+  margin: 0.4rem 0;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #76c6a1;
+}
+
+.input-box label, .gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-inputs {
+  padding: 1rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.continue-button {
+  margin-top: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; 
+}
+
+.continue-button button {
+  width: 100%;
+  border: none;
+  background-color: #7de3b3;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button button:hover {
+  background-color: #76c6a1;
+}
+
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media screen and (min-width: 1350px) {
+  .input-box input {
+    padding: .7rem 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .input-box input {
+    width: 11rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .image {
+    display: none;
+  }
+
+  .container {
+    width: 50%;
+    height: 85vh;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .input-box label {
+    font-size: .9rem;
+  }
+
+  .input-box input {
+    height: 40px;
+    width: 18rem;
+  }
+
+  .title h1 {
+    font-size: 35px;
+  }
+
+  .login-button button {
+    padding: .9rem 2rem;
+  }
+
+  .form-header {
+    margin-bottom: 3.3rem;
+  }
+
+  .input-group {
+    margin-bottom: .5rem;
+  }
+
+  .gender-title h6 {
+    font-size: .9rem;
+  }
+
+  .continue-button {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .input-box input {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .input-box input {
+    width: 14rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+  }
+  .form form {
+    height: 85vh;
+  }
+  .form-header {
+    margin: 0;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .input-group {
+    flex-direction: column;
+    margin: 0;
+  }
+  .input-box {
+    margin-bottom: .4rem;
+  }
+  .input-box input {
+    height: 30px;
+    width: 100%;
+  }
+  .input-box label {
+    font-size: .75rem;
+  }
+  .gender-inputs {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .gender-title h6 {
+    font-size: .75rem;
+  }
+  .login-button button {
+    padding: 0.4rem 1rem;
+  }
+}
