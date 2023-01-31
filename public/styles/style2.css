@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 80%;
-  height: 600px;
+  height: 550px;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
@@ -54,10 +54,11 @@ body {
 }
 
 .form-header {
+  width: 100%;
   padding: 1rem;
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -104,6 +105,7 @@ body {
   flex-direction: row;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-top: 2rem;
 }
 
 .input-box {
@@ -243,7 +245,7 @@ body {
   }
 
   .form-header {
-    margin-bottom: 3.3rem;
+    margin-bottom: 2rem;
   }
 
   .input-group {
